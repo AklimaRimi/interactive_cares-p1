@@ -1,3 +1,5 @@
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FAklimaRimi%2Finteractive_cares-p1&label=Reads&countColor=%23263759)
+
 # Resume Classifier
 
 # Motive
@@ -68,8 +70,9 @@ So after that now the column size is `1116`. These `1116` words are the features
 ## Evalaution
 
 After the parameter tuning step, the final evaluation report is - 
+![Screenshot 2023-08-13 171520](https://github.com/AklimaRimi/interactive_cares-p1/assets/59701116/3ad1f6cf-123e-4709-8e81-1f717e5383ea)
 
-![Screenshot 2023-08-13 171520](https://github.com/AklimaRimi/interactive_cares-p1/assets/59701116/ea8767b4-679d-4863-9b75-adbde9d70bd5)
+
 
 # Python API
 Using the model, I made an API, as it is required. That will take a `path` as input, the `path` is where the resume is to be classified.
@@ -79,17 +82,17 @@ And a `csv` file will be produced. In the CSV tfile thew will be two columns 1st
 # How to use the API
 
 1. Download the file from -
+![Screenshot 2023-08-13 155643](https://github.com/AklimaRimi/interactive_cares-p1/assets/59701116/ca4d20ab-215d-4016-b09b-3ae39c71504b)
 
-![Screenshot 2023-08-13 155643](https://github.com/AklimaRimi/interactive_cares-p1/assets/59701116/9bf2622c-6b37-4dc3-a5f9-a77138a2125b)
 
-2. Unzip the Zip file. Then cmd on folder path like
-   
-![Screenshot 2023-08-13 175339](https://github.com/AklimaRimi/interactive_cares-p1/assets/59701116/183b9a8e-0e61-4f00-aa28-ea7e039cd4c0)
+2. Unzip the Zip file. Then cmd on folder path like   
+![Screenshot 2023-08-13 175339](https://github.com/AklimaRimi/interactive_cares-p1/assets/59701116/dbeb300d-5793-4afc-93d6-be42bd9309bc)
 
-3. Write the code on the terminal, and make sure `pyhton` is already installed in your PC.
+
+4. Write the code on the terminal, and make sure `pyhton` is already installed in your PC.
 
         pip install -r requirements.txt
-4. After installing all of the necessary packages. Then write the command on the terminal
+5. After installing all of the necessary packages. Then write the command on the terminal
 
        python script.py path/x/y
 
