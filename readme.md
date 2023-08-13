@@ -1,3 +1,5 @@
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FAklimaRimi%2Finteractive_cares-p1&label=Reads&countColor=%23263759)
+
 # Resume Classifier
 
 # Motive
