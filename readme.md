@@ -72,7 +72,11 @@ After the parameter tuning step, the final evaluation report is -
 ![Screenshot 2023-08-13 171520](https://github.com/AklimaRimi/interactive_cares-p1/assets/59701116/ea8767b4-679d-4863-9b75-adbde9d70bd5)
 
 # Python API
-Using 
+Using the model, I made an API, as it is required. That will take a `path` as input, the `path` is where the resume is to be classified.
+And a `csv` file will be produced. In the CSV tfile thew will be two columns 1st is resume name and another is the category of the resume.
+
+
+
 
 
 
