@@ -81,16 +81,18 @@ And a `csv` file will be produced. In the CSV tfile thew will be two columns 1st
 
 1. Download the file from -
 
-![Screenshot 2023-08-13 155643](https://github.com/AklimaRimi/interactive_cares-p1/assets/59701116/9bf2622c-6b37-4dc3-a5f9-a77138a2125b)
+![Screenshot 2023-08-13 155643](https://github.com/AklimaRimi/interactive_cares-p1/assets/59701116/ca4d20ab-215d-4016-b09b-3ae39c71504b)
+
 
 2. Unzip the Zip file. Then cmd on folder path like
    
-![Screenshot 2023-08-13 175339](https://github.com/AklimaRimi/interactive_cares-p1/assets/59701116/183b9a8e-0e61-4f00-aa28-ea7e039cd4c0)
+![Screenshot 2023-08-13 175339](https://github.com/AklimaRimi/interactive_cares-p1/assets/59701116/dbeb300d-5793-4afc-93d6-be42bd9309bc)
 
-3. Write the code on the terminal, and make sure `pyhton` is already installed in your PC.
+
+4. Write the code on the terminal, and make sure `pyhton` is already installed in your PC.
 
         pip install -r requirements.txt
-4. After installing all of the necessary packages. Then write the command on the terminal
+5. After installing all of the necessary packages. Then write the command on the terminal
 
        python script.py path/x/y
 
