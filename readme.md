@@ -76,12 +76,26 @@ Using the model, I made an API, as it is required. That will take a `path` as in
 And a `csv` file will be produced. In the CSV tfile thew will be two columns 1st is resume name and another is the category of the resume.
 
 
+# How to use the API
 
+1. Download the file from -
 
+![Screenshot 2023-08-13 155643](https://github.com/AklimaRimi/interactive_cares-p1/assets/59701116/9bf2622c-6b37-4dc3-a5f9-a77138a2125b)
 
+2. Unzip the Zip file. Then cmd on folder path like
+   
+![Screenshot 2023-08-13 175339](https://github.com/AklimaRimi/interactive_cares-p1/assets/59701116/183b9a8e-0e61-4f00-aa28-ea7e039cd4c0)
 
+3. Write the code on the terminal, and make sure `pyhton` is already installed in your PC.
 
+        pip install -r requirements.txt
+4. After installing all of the necessary packages. Then write the command on the terminal
 
+       python script.py path/x/y
+
+### Done.. You will get folders where resumes are saved and A CSV file.
+
+# Thank You
 
 
 
