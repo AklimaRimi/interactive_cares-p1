@@ -68,8 +68,9 @@ So after that now the column size is `1116`. These `1116` words are the features
 ## Evalaution
 
 After the parameter tuning step, the final evaluation report is - 
+![Screenshot 2023-08-13 171520](https://github.com/AklimaRimi/interactive_cares-p1/assets/59701116/3ad1f6cf-123e-4709-8e81-1f717e5383ea)
 
-![Screenshot 2023-08-13 171520](https://github.com/AklimaRimi/interactive_cares-p1/assets/59701116/ea8767b4-679d-4863-9b75-adbde9d70bd5)
+
 
 # Python API
 Using the model, I made an API, as it is required. That will take a `path` as input, the `path` is where the resume is to be classified.
