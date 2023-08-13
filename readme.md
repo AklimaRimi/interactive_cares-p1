@@ -3,7 +3,7 @@
 # Motive
   This task is given by `Interactive Cares` for interview purposes. The task is to create a backend app using `Machine Learning` that could do classification on the resume, save the `Resume` in the classified folder, and generate a `csv` with the `Resume` information.
   
-# Procedure
+# Procedure for Training the ML Model
 
 The dataset was collected from [here](https://www.kaggle.com/datasets/snehaanbhawal/resume-dataset).
 In this dataset, there has `resumes` as `pdf` and a `csv` file that is made on the resumes. I used the CSV file for analysis and model training.
@@ -48,7 +48,7 @@ So after that now the column size is `1116`. These `1116` words are the features
   I found the dataset is not well balanced. Which could be a reason for the biased model. So I used the `RandomOverSampler` method for balancing the dataset. So each  `Category` has 118 resumes and there are 24 `Categories`. After imputer, the dataset size is increased to `2832`.
 
 ## Model Selection
-  As the dataset is small though I imputed some data into the dataset. So I chose `DecissionTree`, `RandomForest`, and `SupportVectorMachine` models for training. If the dataset had enough data or more than 10k I would use other `Gradient-based` models or `Deep Learning` model.
+  As the dataset is small though I imputed some data into the dataset. So I chose `DecissionTree`, `RandomForest`, and `SupportVectorMachine` models for training. If the dataset had enough data or more than 10k I would use other `Gradient-based` models or `Deep Learning` models.
 
   | Model Name | Accuracy |
   |--------|-------|
@@ -62,7 +62,67 @@ So after that now the column size is `1116`. These `1116` words are the features
 
   I used `GridSearchCV` with `cv= 5` to find the best combination of parameters that would produce the best accuracy.
 
-  Finally, `{'max_depth': 18, 'n_estimators': 1000, 'n_jobs': -1}` this combination for `RandomForestClassifier` model gave `74%` accuracy whcih was a good step.
+  Finally, `{'max_depth': 18, 'n_estimators': 1000, 'n_jobs': -1}` this combination for the `RandomForestClassifier` model gave `74%` accuracy which was a good step.
 
-# Output 
-# Evalaution
+  
+## Evalaution
+
+After the parameter tuning step, the final evaluation report is - 
+
+![Screenshot 2023-08-13 171520](https://github.com/AklimaRimi/interactive_cares-p1/assets/59701116/ea8767b4-679d-4863-9b75-adbde9d70bd5)
+
+# Python API
+Using 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
