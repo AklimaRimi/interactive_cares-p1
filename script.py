@@ -80,23 +80,23 @@ def categorize():
         df['Tokens'] = df['Tokens'].apply(lambda x: filter(x))
         df['Tokens'] = df['Tokens'].apply(lambda skills: ' '.join([' '.join(skill) for skill in skills]))
 
-        tfidf  = vector.fit_transform(df['Tokens'])
-        tfidf_df = pd.DataFrame(tfidf.toarray(), columns=vector.get_feature_names_out())
+        word_count  = vector.fit_transform(df['Tokens'])
+        word_count_df = pd.DataFrame(word_count.toarray(), columns=vector.get_feature_names_out())
 
         filtered_cols = []
 
-        for i in tfidf_df.columns:
+        for i in word_count_df.columns:
             if i in cols:
                 filtered_cols.append(i)
-        tfidf_df = tfidf_df[filtered_cols]
+        word_count_df = word_count_df[filtered_cols]
         df = pd.DataFrame()
         def add_col():
-            col = tfidf_df.columns
+            col = word_count_df.columns
             for i in cols:
                 if i not in col:
                     df[i] = [0]
                 else:
-                    df[i] = tfidf_df[i]                
+                    df[i] = word_count_df[i]                
                 
         add_col()
 
