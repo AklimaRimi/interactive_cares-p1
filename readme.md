@@ -29,7 +29,40 @@ All of these procedures are to reduce dataset column size.
 
 ## Text to Number
 
-  As an ML won't understand any text so I used  
+  As an ML won't understand any text, I used a simple `CountVectorizer` to count how many times a word exists.
+
+After that, the dataset size was `2484, 26847`. 2484 rows and 26847 no columns which is huge, and many columns appear only once also useless.
+
+## Feature Selection
+
+After performing `CountVectorize`, a numerous number of column had created. So I took the words which occurred more than 5% in the dataset. 
+So after that now the column size is `1116`. These `1116` words are the features.
+
+      Question: Why did I take more than 5% occurred words? Why not more or less?
+      Ans: Simple, these words more than `5%` gave me the best result which is `60%` accurate. While using `1%` gave me `41%` and `10%` gave me `48%` using a particular ML model.
+
+## Split Dataset
+   As the dataset contains 2484 resume information which is a tiny dataset. So, I split the dataset and took `0.05%` data for testing the model, and the rest of it (2360) is for training a model.
+
+## Data Impute
+  I found the dataset is not well balanced. Which could be a reason for the biased model. So I used the `RandomOverSampler` method for balancing the dataset. So each  `Category` has 118 resumes and there are 24 `Categories`. After imputer, the dataset size is increased to `2832`.
+
+## Model Selection
+  As the dataset is small though I imputed some data into the dataset. So I chose `DecissionTree`, `RandomForest`, and `SupportVectorMachine` models for training. If the dataset had enough data or more than 10k I would use other `Gradient-based` models or `Deep Learning` model.
+
+  | Model Name | Accuracy |
+  |--------|-------|
+  |SVC| 46%|
+  | DecisionTreeClassification|44%|
+  | RandomForestClassification |57%|
+
+  Finally, I chose the `RandomForestClassification` for further work.
+
+## Parameter Tuning
+
+  I used `GridSearchCV` with `cv= 5` to find the best combination of parameters that would produce the best accuracy.
+
+  Finally, `{'max_depth': 18, 'n_estimators': 1000, 'n_jobs': -1}` this combination for `RandomForestClassifier` model gave `74%` accuracy whcih was a good step.
 
 # Output 
 # Evalaution
